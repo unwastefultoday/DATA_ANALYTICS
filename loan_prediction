@@ -1,0 +1,12 @@
+import pandas as pd
+import matplotlib.pyplot as py
+import numpy as np
+
+df = pd.read_csv("C:\\Users\\Ambarish Deb\\Desktop\\STUDY\\Nuclei\\project\\data\\train_u6lujuX_CVtuZ9i.csv")
+df.describe()
+#inferences-
+#1. some values in Loanamount, loanamountterm and credit history is missing.
+#2. mean>median, rightwards skew.
+#3. mean>median, rightwards skew.
+#4. If skew present operations can't be executed directly. Data needs to be munged and cleaned first.
+#5. Since mean of credit history column is 0.842 with binary values of 1 and 0, 84% people have a credit history.
